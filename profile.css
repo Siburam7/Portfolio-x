@@ -49,6 +49,14 @@
   src: url('./font/Aclonica-Regular.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#Offre {
+  scroll-margin-top: 100px;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -1092,6 +1100,14 @@ img {
   margin-bottom: 0;
   }
  
+  
+
+
+
+
+
+
+
 } 
   
     
