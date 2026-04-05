@@ -24,6 +24,30 @@
   src: url('./font/OrangeAvenueOutlineDEMO-Regular.otf');
 }
 
+@font-face {
+  font-family: 'text33';
+  src: url('./font/Garcian.otf');
+}
+
+@font-face {
+  font-family: 'text44';
+  src: url('./font/Kaerobi.ttf');
+}
+
+@font-face {
+  font-family: 'text55';
+  src: url('./font/SpaceMono-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'text66';
+  src: url('./font/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'text77';
+  src: url('./font/Aclonica-Regular.ttf');
+}
 
 .navbar {
   position: fixed;
@@ -811,19 +835,23 @@ img {
     flex-direction: column;
     margin-top: 120px;
     align-items: flex-start;
-    padding: 0 25px;
+    padding: 0 30px;
   }
+    
 
   .left-side1 h1 {
-    font-size: 30px;
-    /* font-family: 'text22'; */
+    font-size: 33px;
+    font-family: 'text66';
+    /* letter-spacing: 1px; */
   }
+   
+    
 
   .left-side1 p {
     text-align: left;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0;
-    
+    font-family: 'text66';
   }
    
   .pf-picure-right {
@@ -831,9 +859,29 @@ img {
   }
 
   .btn {
-    padding: 7px 10px;
-    font-size: 15px;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 13px;
+    background-color:#494949;
+    transition: all 0.3s ease;
   }
+
+  .btn:hover {
+    background-color: #4CBB17;
+  }
+
+  .btn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .btn:hover i {
+  transform: translateX(8px);
+}
+    
+ .btn i:hover {
+    transform: translateX(8px);
+ }
 
   .name {
     font-size: 13px
@@ -847,7 +895,7 @@ img {
  .box-1 {
   flex-direction: column;
   width: 95%;
-  margin-top: 30px;
+  margin-top: 25px;
  }
 
  .left-box,
@@ -890,9 +938,7 @@ img {
     font-family: 'sonix';
   }
 
-  .head-projects {
-    margin-top: 50px;
-  }
+  
 
   .head-projects h2,
   .wr-wt h2 {
