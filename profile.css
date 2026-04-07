@@ -49,6 +49,148 @@
   src: url('./font/Aclonica-Regular.ttf');
 }
 
+
+
+/* #home Section */
+
+.head-home {
+  height: 725px;
+  background-color: #2D2D2D;
+  color: white;
+}
+  
+
+.left-side1 h1{
+  font-size: 55px;
+  color:white;
+}
+
+.left-side1 h1 span {
+  color: #F2B50B;
+}
+
+.left-side1 h4 {
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-family: sonix;
+  font-weight: lighter;
+} 
+ 
+  
+  
+
+.left-side1 p {
+  margin-top: 40px;
+  max-width: 500px;
+  
+}
+
+#buttom-x {
+  padding: 15px 30px;
+  margin-top: 40px;
+}
+#buttom-y {
+  padding: 15px 30px;
+  margin-left: 20px;
+}
+
+.left-side1 p a{
+  font-family: sonix ;
+}
+ 
+
+
+.right-side-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.pf-picure-right {
+  margin-top: -20px;
+  background-image: url('siburam.n7.webp');
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  width: 320px;
+  border-bottom-left-radius: 150px;
+  z-index: 2;
+  position:absolute;
+  left: 10px;
+  
+}
+  
+
+
+.pf-picure-right1 {
+  border-bottom-left-radius: 150px;
+  margin-top: 250px;
+  background-color: #3a8f1c;
+  height: 330px;
+  width: 320px;
+  position: relative;
+  /* box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3); */
+  /* filter: brightness(0.8) contrast(1.1); */
+  filter: grayscale(20%) brightness(0.8) contrast(1.1);
+   box-shadow: 0 0 40px rgba(60, 142, 21, 0.5);
+}
+
+
+.left-side1 {
+  margin-right: 75px;
+}
+
+.head-home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.bg-video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  z-index: -1; 
+  filter: grayscale(20%) brightness(0.8);
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #project section */
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -61,18 +203,26 @@ html {
   position: fixed;
   width: 100%;
   height: 55px;
-  background-color: white;
+  background-color: #aaa;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
   z-index: 2;
   padding: 0 20px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+  
 
 
 
 .menu {
+  display: none;
   margin-right: 45px;
 }
 
@@ -81,18 +231,19 @@ html {
 }
 
 .picture-head {
-  background-image: url('siburam.n7.webp');
+  background-image: url('cbux-logo.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  width: 100px;
+  /* border-radius: 50%; */
 }
 
 .picture-head:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
+
 
 .left {
   display: flex;
@@ -112,26 +263,45 @@ html {
   background-color: #D9D9D9;
 }
 
-
-.navbar a {
-  text-decoration: none;
-  color: black;
-  font-size: 13px;
+.group-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0px 20%;
+  
 }
- 
-.navbar a:hover {
-  border-bottom: 2px solid black;
-  /* letter-spacing: 0.5px; */
-  transform: scale(1.1);
+
+.group-tag a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #1f1f1f;
+  padding: 12px 18px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+}
+
+.group-tag a:hover {
+  color:#4CBB17;
+  border: 2px solid #4CBB17;
 }
   
 
+#colorx {
+  color: #4CBB17;
+  border-bottom: 2px solid #4CBB17;
+}
+
+ 
+.under-line4 {
+  margin-right: 50px;
+}
 
 .hero {
   margin-top: 55px;
   position: fixed;
   width: 100%;
-  height: 35px;
+  height: 30px;
   background-color: #4CBB17;
   display: flex;
   align-items: center;
@@ -152,7 +322,10 @@ html {
 .logo1 {
   display: flex;
   gap: 13px ;
+  margin-right: 45px;
 }
+  
+
 
 .fa-brands:hover {
      transform: scale(1.15);
@@ -186,45 +359,24 @@ html {
   justify-content:space-evenly;
 }
 
-.pf-picure-right {
-  background-image: url('siburam.n7.webp');
-  background-size: cover;
-  position: relative;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  margin-top: 225px;
-}
-
-.pf-picure-right::before {
-  content: "";
-  position: absolute;
-  inset: -15px;
-  border-radius: 50%;
-  border: 5px solid transparent;
-  border-top-color: white;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(0deg);
-    
-  }
-  from {
-    transform: rotate(-360deg);
-    
-  }
-}
 
 .left-side1 {
-  max-width: 700px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-top: 250px;
+  margin-top: 200px;
+  
 }
+
+.left-side1 h5{
  
+  font-size: 11px;
+  color:#aaa;
+  cursor: pointer;
+  position: relative;
+  margin-left: 5px;
+}
+
 
 .left-side1 p {
   color: #c7c4c4;
@@ -232,31 +384,60 @@ html {
   letter-spacing: 1px;
 }
 
+.left-side1 p a {
+  text-decoration: none;
+  color:rgb(255, 188, 106);
+}
+
 .btn {
   display: inline-block;
   color: white;
-  padding: 15px 60px;
-  background-color: #4CBB17;
-  border-radius: 2px;
+  background-color: #494949;
+  border-radius: 8px;
   text-decoration: none;
   text-align: center;
   width: fit-content;
   font-family: 'sonix';
   letter-spacing: 1px;
-}
+  font-size: 13px;
+  transition: all 0.3s ease;
+  }
 
-.head-projects {
+  .btn:hover {
+    background-color: #4CBB17;
+  }
+
+  .btn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .btn:hover i {
+  transform: translateX(8px);
+}
+    
+ .btn i:hover {
+    transform: translateX(8px);
+ }
+
+
+ .head-projects {
   display: flex;
   justify-content: space-evenly;
   margin-top: 75px;
-}
+ }
 
-.head-projects h2 {
+ .head-projects h2 {
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
-}
-  
+ }
+
+  .head-projects h2,
+  .wr-wt h2 {
+    font-size: 35px;
+    font-family: 'text11';
+  }
   
 
   
@@ -350,6 +531,7 @@ html {
   background-color: #4CBB17;
   color: white;
   border: none;
+  font-family: 'sonix';
 }
 
 .left-box button:hover {
@@ -408,6 +590,7 @@ html {
   background-color: #4CBB17;
   color: white;
   border: none;
+  font-family: 'sonix';
 }
 
 .right-box2 button:hover {
@@ -470,7 +653,7 @@ html {
 }
 
 .boxs-1 {
-  height: 75px;
+  height: 70px;
   width: 15%;
   /* border: 2px solid white; */
   border-radius: 5px;
@@ -479,6 +662,12 @@ html {
 .boxs-1:hover {
   border: 5px solid white;
 }
+
+#Extra-box {
+  display: none;
+}
+
+
 
 .a-img {
   background-image:url('logox1.png');
@@ -584,7 +773,9 @@ html {
 }
 
 
-
+.form-group:last-child {
+  margin-bottom: 0;
+}
 
 .form-group {
   display: flex;
@@ -690,6 +881,10 @@ textarea:-webkit-autofill {
   letter-spacing: 1px;
 }
 
+.footer-logo {
+  display: none;
+}
+
 
 
 img {
@@ -709,11 +904,6 @@ img {
     align-items: center;
   }
 
-  .pf-picure-right {
-    margin-top: 50px;
-    height: 200px;
-    width: 200px;
-  }
 
   .box-1 {
     flex-direction: column;
@@ -862,34 +1052,14 @@ img {
     font-family: 'text66';
   }
    
-  .pf-picure-right {
-    display: none;
-  }
+
 
   .btn {
     border-radius: 8px;
     padding: 10px 30px;
     font-size: 13px;
-    background-color:#494949;
-    transition: all 0.3s ease;
   }
-
-  .btn:hover {
-    background-color: #4CBB17;
-  }
-
-  .btn i {
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-  }
-
-  .btn:hover i {
-  transform: translateX(8px);
-}
     
- .btn i:hover {
-    transform: translateX(8px);
- }
 
   .name {
     font-size: 13px
@@ -997,6 +1167,9 @@ img {
     text-align: center;
  }
   
+ #Extra-box {
+  display: flex;
+ }
 
  .scroll-wrapper {
     overflow: hidden;
@@ -1093,6 +1266,7 @@ img {
   }
   
   .footer-logo {
+    display: flex;
     color: white;
   }
     
