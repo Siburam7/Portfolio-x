@@ -1023,13 +1023,14 @@ img {
   }
 
   .left-side1 p {
-    font-size: 20px;
+    font-size: 19px;
     max-width: 550px;
     text-align: center;
+    align-items: center;
   }
 
   .left-side1 h4 {
-    margin-left: -380px;
+    margin-left: 0  ;
     margin-bottom: 10px;
     font-size: 20px;
   }
@@ -1248,7 +1249,7 @@ img {
   }
 
   .left-side1 {
-    justify-content: center;
+    align-items: flex-start;
     margin: 0;
   }
 
@@ -1260,7 +1261,7 @@ img {
    font-size: 38px;
    color:white;
    text-align: left;
-   margin-left: -35px;
+   margin-left: -20px;
   }
 
  .left-side1 h1 span {
@@ -1274,7 +1275,7 @@ img {
    font-weight: lighter;
    font-size: 12px;
    text-align: left;
-   margin-left: -190px;
+   margin-left: -20px;
  } 
   
  .btn-box a {
@@ -1285,7 +1286,7 @@ img {
    margin-top: 30px;
    width:300px ;
    text-align: left;
-   margin-left: -19.5px;
+   margin-left: -20px;
    font-size: 10.5px;
  }
 
